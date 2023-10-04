@@ -1,0 +1,45 @@
+/* Default styles for the image */
+
+
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    background-color: aqua;
+
+        width: 50vw; /* Set container width to 50% of viewport width */
+        height: 50vw; /* Set container height to 50% of viewport width */
+        max-width: 50vh; /* Set maximum container width to 50% of viewport height */
+        max-height: 50vh; /* Set maximum container height to 50% of viewport height */
+        margin: 0 auto; /* Center the container horizontally */
+        display: flex;
+        justify-content: center; /* Center the image horizontally within the container */
+        align-items: center; /* Center the image vertically within the container */
+      }
+
+
+/* Media query for screens smaller than 960px */
+@media (max-width: 960px) {
+    .image-container img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto; /* Maintain the image's aspect ratio */
+    }
+}
+
+/* Default styles for the image */
+.image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+/* Media query for screens 960px or larger */
+@media (min-width: 960px) {
+    .image-container {
+        width: 200px; /* Set the container's width to create a square */
+        height: 200px; /* Set the container's height to match the width */
+    }
+
+    .image-container img {
+        width: 100%; /* Make the image fill its container */
+        height: 100%; /* Maintain the image's aspect ratio */
+    }
+}
